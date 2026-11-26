@@ -1,0 +1,6 @@
+"Model","Exposure","n","Deaths","HR (95% CI)","Condition number"
+"Risk-quartile-stratified baseline hazards, primary cohort","Lower grip strength","2,650","192","1.70 (1.32–2.20)","5.6"
+"Risk-quartile-stratified baseline hazards, older cohort","Lower grip strength","1,512","148","1.44 (1.12–1.84)","59.1"
+"Risk-quartile-stratified baseline hazards, older cohort","Mobility limitation","1,512","148","2.31 (1.47–3.64)","59.1"
+"Mobility-specific spline knots","Lower grip strength","1,512","148","1.44 (1.12–1.85)","4.6"
+"Mobility-specific spline knots","Mobility limitation","1,512","148","2.37 (1.51–3.74)","4.6"

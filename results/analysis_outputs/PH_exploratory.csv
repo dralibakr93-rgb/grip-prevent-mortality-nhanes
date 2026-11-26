@@ -1,0 +1,26 @@
+"model","term","chisq","df","p"
+"Primary: continuous strength","lower_z",0.445202508218773,1,0.504622055704016
+"Primary: continuous strength","r1",9.37461706197869,1,0.00220010662251466
+"Primary: continuous strength","r2",8.37927109032273,1,0.00379524603720993
+"Primary: continuous strength","r3",3.67043641694643,1,0.0553856801751207
+"Primary: continuous strength","a1",1.06758382588507,1,0.301491840711012
+"Primary: continuous strength","a2",0.460224398614454,1,0.497519118869008
+"Primary: continuous strength","a3",1.59723732758053,1,0.206295161486227
+"Primary: continuous strength","sex_factor",0.298612194350337,1,0.584753761069617
+"Primary: continuous strength","cycle",0.972001305749657,1,0.324181565725152
+"Primary: continuous strength","height",1.16501204225864,1,0.280428506968664
+"Primary: continuous strength","bmi",0.0334656756034296,1,0.854848030766864
+"Primary: continuous strength","GLOBAL",14.6265982267707,11,0.200237437323291
+"Mobility D: strength and limitation","lower_z",1.30962237946345,1,0.252463036988297
+"Mobility D: strength and limitation","mobility",0.121606058746524,1,0.72729907536845
+"Mobility D: strength and limitation","r1",9.22369075263509,1,0.0023890346831431
+"Mobility D: strength and limitation","r2",4.76889523555671,1,0.0289784154339983
+"Mobility D: strength and limitation","r3",0.389338029890689,1,0.532647566661467
+"Mobility D: strength and limitation","a1",0.607844869059312,1,0.435600410807811
+"Mobility D: strength and limitation","a2",1.06289508606093,1,0.302555810554312
+"Mobility D: strength and limitation","a3",0.0106559796209214,1,0.917782172989627
+"Mobility D: strength and limitation","sex_factor",0.492795115668815,1,0.482683109742981
+"Mobility D: strength and limitation","cycle",1.98775075572392,1,0.158576256431294
+"Mobility D: strength and limitation","height",1.62844342314483,1,0.201918480236739
+"Mobility D: strength and limitation","bmi",1.03567487095557,1,0.30882952038442
+"Mobility D: strength and limitation","GLOBAL",29.7871139281211,12,0.00300595829293678

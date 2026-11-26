@@ -1,0 +1,40 @@
+# Raw public input files (NHANES 2011-2014 and 2019 public-use linked mortality files)
+# Columns: path relative to data/raw/ | bytes | sha256 | source_url
+# All files are public-use data released by the National Center for Health Statistics (NCHS).
+# Verify with (from the repository root): Rscript data/download_raw_data.R
+
+2011_2012/ALB_CR_G.xpt | 377040 | 46c5733d0bdb1d4bbe841614a3e6ef6b9dab8501f455af4f841cc43a312e579d | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/ALB_CR_G.xpt
+2011_2012/BIOPRO_G.xpt | 1997040 | 8c3a0b1bea79ff79c5600ad6a76c4206a7d689479f94ae81da6360058eda5d05 | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/BIOPRO_G.xpt
+2011_2012/BMX_G.xpt | 1946720 | 4814bfc3047ed400b9d43d285f8c3ea7c940ac6489404a9b699579715d158ec3 | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/BMX_G.xpt
+2011_2012/BPQ_G.xpt | 743920 | 39c5a0ee1d76e6f3df867c0057986a21f4a028038002c43214c5af8bdec83cae | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/BPQ_G.xpt
+2011_2012/BPX_G.xpt | 2021600 | 1dd66110f41465d601cd54f1e3c6010baafb9375f09fbcaa3aef2536876146fd | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/BPX_G.xpt
+2011_2012/DEMO_G.xpt | 3753760 | eaf0525d1952626885af3e935415a1f66ad62c18698080e7354789c125af252d | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/DEMO_G.xpt
+2011_2012/DIQ_G.xpt | 3978560 | a9d5475e0cd66d6a7bc30230345ed0172a9abcbc0a7a4145a35025c827a52a87 | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/DIQ_G.xpt
+2011_2012/GHB_G.xpt | 105840 | 8ff7cc95461fdfd47d2c9640b944a2bcd45926a3c0e64c98a09a4cef6c0f88d7 | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/GHB_G.xpt
+2011_2012/HDL_G.xpt | 188960 | ffc060d394cc487f3206462fdfc77648bdbdd6e279bfc5dd8e9cbba3ccdcac4f | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/HDL_G.xpt
+2011_2012/MCQ_G.xpt | 6905520 | 7538eb86c72b81fd5e76b56120fcb068ed38149d44650e9e750670ad58658d52 | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/MCQ_G.xpt
+2011_2012/MGX_G.xpt | 1756560 | a91826169503b45efe605d5b51a7b0937e9cda2400011e38a6216a73200ed783 | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/MGX_G.xpt
+2011_2012/PFQ_G.xpt | 2343680 | 453ef39e77298921ff9d192cb03d40412e79100edd970e2bda13cf8e95937a10 | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/PFQ_G.xpt
+2011_2012/RXQ_RX_G.xpt | 2994400 | 4dd72348270f4f818ffcf6a0b0d49e5c471e2a9673a03562bb06c0e4dad93bc6 | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/RXQ_RX_G.xpt
+2011_2012/SMQ_G.xpt | 1946960 | 69f2375f036a815082b1e97110e79c505b91e0985c61696f8eaacf94828115dc | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/SMQ_G.xpt
+2011_2012/TCHOL_G.xpt | 188960 | 08682d7bcee71c1a5c5d977ebfe5f55eda43354a4ff76b07c3fbb487075e0731 | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/TCHOL_G.xpt
+2013_2014/ALB_CR_H.xpt | 399600 | 65adbd6c87541464e69fa2da54fb2c5e9e0c198fa322943a21ccbcacd8c40670 | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/ALB_CR_H.xpt
+2013_2014/BIOPRO_H.xpt | 2127760 | b114fde7fc46933e6b4e3f620b8e7b61ea5b46f82121c0dc05a7b8c1fbdd0548 | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/BIOPRO_H.xpt
+2013_2014/BMX_H.xpt | 2045520 | fd5e9fc6e6aab0a4aee6e699f51497bbc9b62101f7f43aee924c473e38fd9442 | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/BMX_H.xpt
+2013_2014/BPQ_H.xpt | 726720 | aa6ddeab80c73b074ccfd04ad010da404ecb91c048476a194594ce9552d03d49 | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/BPQ_H.xpt
+2013_2014/BPX_H.xpt | 1809600 | b6641efc30ac9b9de328dfbf4110d0d120439aadca2c2bc89f2e77310d1a0c8e | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/BPX_H.xpt
+2013_2014/DEMO_H.xpt | 3833200 | f8f0cbb3085a323d4cde22349b164878fea1e64dbc404e65b5815c7816b547d7 | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/DEMO_H.xpt
+2013_2014/DIQ_H.xpt | 4228960 | c74c7ccef65e6997dfac1db1e73bc3f63dec67c70b2e322ffc14f14ce27429a9 | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/DIQ_H.xpt
+2013_2014/GHB_H.xpt | 112720 | 0695894ad55ac96f315a8415401977b0856c402d16762115b534bcd5dfeae89e | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/GHB_H.xpt
+2013_2014/HDL_H.xpt | 200240 | d5aef1b9e9869d8124f7b2f81da38328827d06ea80d2f630f815a0ecd0c58a66 | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/HDL_H.xpt
+2013_2014/MCQ_H.xpt | 7439280 | 5c83210e6e1fe929282621322ed0f94d95cdb0a37ccaff36f703ab0b2e7b9dc6 | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/MCQ_H.xpt
+2013_2014/MGX_H.xpt | 1861840 | 49f0440f0bacf180bd9a674f5411c0bae0230a8c2e5a90a41e8e6754bcb8607b | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/MGX_H.xpt
+2013_2014/PFQ_H.xpt | 2664000 | f0f396ecc38899933d447ca7b3060cdcb6d8f88c44adfc0a4fcf303d84d2bb9a | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/PFQ_H.xpt
+2013_2014/RXQ_RX_H.xpt | 9897680 | ca9801043c20b2074e20baf73130e1ce25c4115f2270649997f6c2ef936b23b6 | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/RXQ_RX_H.xpt
+2013_2014/SMQ_H.xpt | 2170000 | 86d74bb8842ce6d60350944417cbd3e9ee39dd5a9fa1bda33426f276b673861f | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/SMQ_H.xpt
+2013_2014/TCHOL_H.xpt | 200240 | 0867a9d340dc84eec8dc1f08672e7ffd0a364b57a92533973c460acb4f52d643 | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/TCHOL_H.xpt
+Mortality_2019_LMF/NHANES_2011_2012_MORT_2019_PUBLIC.dat | 475574 | ff98b6c87172643426b1c6d20f76495592bebd618ea18f742d98a44b84456b30 | https://ftp.cdc.gov/pub/Health_Statistics/NCHS/datalinkage/linked_mortality/NHANES_2011_2012_MORT_2019_PUBLIC.dat
+Mortality_2019_LMF/NHANES_2013_2014_MORT_2019_PUBLIC.dat | 494268 | 588acea1d4cdf47a14cc9a35bd56e372739b8788d63ca0af98bf954c70c29905 | https://ftp.cdc.gov/pub/Health_Statistics/NCHS/datalinkage/linked_mortality/NHANES_2013_2014_MORT_2019_PUBLIC.dat
+Reference/RXQ_DRUG.xpt | 3372240 | a872fb3c7ce589971e603a6266bbd07f09e15d11bab2e3f574c56529081e4bbe | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/1988/DataFiles/RXQ_DRUG.xpt
+2011_2012/HUQ_G.xpt | 782640 | b9ef438747fdc746185a2eb0bec9e63e36212efdc774f2c8bec7f680a60ee924 | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2011/DataFiles/HUQ_G.xpt
+2013_2014/HUQ_H.xpt | 816160 | a35e8ca0c5b7ca6a86a8d787cbd0c3132a10ef5f66b8b432c57885f7bbaa04dd | https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2013/DataFiles/HUQ_H.xpt

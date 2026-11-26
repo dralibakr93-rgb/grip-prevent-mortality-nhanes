@@ -1,0 +1,76 @@
+function (dat, model = c("base", "uacr", "hba1c", "sdi", "full"), 
+    units = c("mg/dL", "mmol/L")) 
+{
+    model <- match.arg(model)
+    units <- match.arg(units)
+    add_const_and_unlist <- function(pred_dat) {
+        pred_dat %>% dplyr::mutate(constant = 1) %>% as.list() %>% 
+            unlist()
+    }
+    remove_vars_for <- function(dat, col_name_contains) {
+        request <- col_name_contains %>% strsplit("|", fixed = TRUE) %>% 
+            unlist()
+        stopifnot(request %in% c("uacr", "hba1c", "sdi"))
+        dat %>% dplyr::select(-matches(col_name_contains))
+    }
+    pred_vals <- dat %>% dplyr::transmute(age = (age - 55)/10, 
+        age_squared = age^2, non_hdl_c = if (units == "mg/dL") {
+            convert_chol_to_mmol(total_c - hdl_c) - 3.5
+        }
+        else {
+            (total_c - hdl_c) - 3.5
+        }, hdl_c = if (units == "mg/dL") {
+            (convert_chol_to_mmol(hdl_c) - 1.3)/0.3
+        }
+        else {
+            (hdl_c - 1.3)/0.3
+        }, sbp_lt_110 = (min(sbp, 110) - 110)/20, sbp_gte_110 = (max(sbp, 
+            110) - 130)/20, dm = as_numeric_binary(dm), smoking = as_numeric_binary(smoking), 
+        bmi_lt_30 = (min(bmi, 30) - 25)/5, bmi_gte_30 = (max(bmi, 
+            30) - 30)/5, egfr_lt_60 = (min(egfr, 60) - 60)/-15, 
+        egfr_gte_60 = (max(egfr, 60) - 90)/-15, bp_tx = as_numeric_binary(bp_tx), 
+        statin = as_numeric_binary(statin), bp_tx_sbp_gte_110 = bp_tx * 
+            sbp_gte_110, statin_non_hdl_c = statin * non_hdl_c, 
+        age_non_hdl_c = age * non_hdl_c, age_hdl_c = age * hdl_c, 
+        age_sbp_gte_110 = age * sbp_gte_110, age_dm = age * dm, 
+        age_smoking = age * smoking, age_bmi_gte_30 = age * bmi_gte_30, 
+        age_egfr_lt_60 = age * egfr_lt_60, sdi = if (exists("zip", 
+            dat)) 
+            get_sdi(zip)
+        else NA, hba1c = if (exists("hba1c", dat)) 
+            hba1c
+        else NA, uacr = if (exists("uacr", dat)) 
+            uacr
+        else NA)
+    if (model == "base") {
+        return(pred_vals %>% remove_vars_for("sdi|hba1c|uacr") %>% 
+            add_const_and_unlist())
+    }
+    pred_vals <- pred_vals %>% dplyr::mutate(sdi_4_to_6 = as_numeric_binary(is_between(sdi, 
+        4, 6)), sdi_7_to_10 = as_numeric_binary(is_between(sdi, 
+        7, 10)), missing_sdi = as_numeric_binary(is.na(sdi)), 
+        ln_uacr = if (!is.na(uacr)) 
+            log(uacr)
+        else 0, missing_uacr = as_numeric_binary(is.na(uacr)), 
+        hba1c_dm = if (!is.na(hba1c) && dm == 1) 
+            hba1c - 5.3
+        else 0, hba1c_no_dm = if (!is.na(hba1c) && dm == 0) 
+            hba1c - 5.3
+        else 0, missing_hba1c = as_numeric_binary(is.na(hba1c)))
+    pred_vals <- pred_vals %>% dplyr::select(-c(sdi, hba1c, uacr))
+    if (model == "uacr") {
+        return(pred_vals %>% remove_vars_for("sdi|hba1c") %>% 
+            add_const_and_unlist())
+    }
+    if (model == "hba1c") {
+        return(pred_vals %>% remove_vars_for("sdi|uacr") %>% 
+            add_const_and_unlist())
+    }
+    if (model == "sdi") {
+        return(pred_vals %>% remove_vars_for("uacr|hba1c") %>% 
+            add_const_and_unlist())
+    }
+    pred_vals %>% add_const_and_unlist()
+}
+<bytecode: 0xc7735d620>
+<environment: namespace:preventr>

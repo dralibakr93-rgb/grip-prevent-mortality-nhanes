@@ -1,0 +1,7 @@
+"Model","Standardization target","Lower strength, % (95% CI)","Higher strength, % (95% CI)","Difference, percentage points (95% CI)"
+"Primary model (linear strength)","Supported target (n=2,447)","3.69 (2.43–4.95)","1.90 (1.07–2.73)","1.79 (0.86–2.72)"
+"Primary model (linear strength)","Full primary cohort (n=2,650)","3.99 (2.68–5.31)","2.06 (1.16–2.96)","1.93 (0.96–2.90)"
+"Risk-quartile-stratified baseline hazards","Supported target (n=2,447)","3.98 (2.65–5.31)","2.06 (1.21–2.91)","1.92 (0.92–2.92)"
+"Risk-quartile-stratified baseline hazards","Full primary cohort (n=2,650)","4.17 (2.82–5.53)","2.16 (1.27–3.06)","2.01 (0.99–3.03)"
+"Spline-modeled strength","Supported target (n=2,447)","3.67 (2.36–4.98)","1.91 (1.06–2.76)","1.76 (0.69–2.84)"
+"Spline-modeled strength","Full primary cohort (n=2,650)","3.97 (2.61–5.33)","2.07 (1.15–2.99)","1.91 (0.77–3.04)"

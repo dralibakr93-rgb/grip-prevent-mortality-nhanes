@@ -1,0 +1,5 @@
+"Population","n","Deaths, n"
+"Primary cohort","2,650","192"
+"Added by relaxing only the BMI range","229","25"
+"BMI-relaxed sensitivity cohort","2,879","217"
+"Missing score inputs, otherwise eligible (not analyzed)","332","38"

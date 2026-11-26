@@ -1,0 +1,8 @@
+output/
+_build/
+.Rhistory
+.RData
+.Rproj.user/
+.DS_Store
+/data/raw
+/data/analytic

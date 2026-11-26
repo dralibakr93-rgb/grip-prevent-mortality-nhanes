@@ -1,0 +1,2 @@
+"model","N","deaths","imputations","HR","lower","upper","P","beta","SE","df","missing_information"
+"Income multiply imputed expanded adjustment",2649,192,40,1.72875718527634,1.32879543975299,2.24910570599197,0.000426701170338423,0.547402760330254,0.124297698846758,16.2812369180395,0.103980321777869

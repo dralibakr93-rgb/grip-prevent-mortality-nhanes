@@ -1,0 +1,6 @@
+"Specification or test","Value"
+"Knot at weighted 10th percentile","1.25 SD (men 54.5 kg; women 34.0 kg)"
+"Knot at weighted 50th percentile","-0.02 SD (men 44.5 kg; women 27.8 kg)"
+"Knot at weighted 90th percentile","-1.28 SD (men 34.7 kg; women 21.7 kg)"
+"Overall association, Wald F test","F=10.04 (2, 21 df); P<0.001"
+"Nonlinear component, Wald F test","F=0.02 (1, 21 df); P=0.90"

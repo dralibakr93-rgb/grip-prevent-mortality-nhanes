@@ -1,0 +1,6 @@
+"model","term","N","deaths","HR","lower","upper","P","df"
+"Primary: excluding prior-year hospitalization","lower_z",2416,148,1.51540541040612,1.15718505465641,1.984517125111,0.0041662387291911,22
+"Mobility D: excluding prior-year hospitalization","lower_z",1355,115,1.4156487380829,1.04029666213204,1.92643254812378,0.028853334250207,21
+"Mobility D: excluding prior-year hospitalization","mobility",1355,115,2.07335677987375,1.29510918853102,3.31926325186865,0.00408515113357072,21
+"Primary: adjusted for prior-year hospitalization","lower_z",2650,192,1.65114848120608,1.30050316781396,2.09633576792575,0.0002691403630947,21
+"Primary: adjusted for prior-year hospitalization","prior_hosp",2650,192,2.92126507465843,2.00044585435179,4.26594382340048,7.62629745999131e-06,21

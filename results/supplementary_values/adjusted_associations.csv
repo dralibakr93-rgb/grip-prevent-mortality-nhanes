@@ -1,0 +1,7 @@
+"Model","Exposure","n","Deaths","β (SE)","HR (95% CI)","P value","df"
+"Primary cohort","Lower grip strength, per SD","2,650","192","0.539 (0.126)","1.72 (1.32–2.23)","<0.001",22
+"Primary cohort","Lower grip strength, per 5 kg","2,650","192","0.409 (0.090)","1.51 (1.25–1.82)","<0.001",22
+"Older cohort, model B","Mobility limitation","1,512","148","0.977 (0.206)","2.66 (1.73–4.07)","<0.001",22
+"Older cohort, model C","Lower grip strength, per SD","1,512","148","0.463 (0.121)","1.59 (1.24–2.04)","<0.001",22
+"Older cohort, model D","Lower grip strength, per SD","1,512","148","0.374 (0.121)","1.45 (1.13–1.87)","0.005",21
+"Older cohort, model D","Mobility limitation","1,512","148","0.865 (0.215)","2.37 (1.52–3.71)","<0.001",21

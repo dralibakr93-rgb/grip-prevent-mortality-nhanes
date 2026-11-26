@@ -1,0 +1,11 @@
+variable,description,type,units,source_or_derivation
+SEQN,Respondent sequence number (links to the analytic dataset),integer,,DEMO SEQN
+prevent_total_cvd,Base PREVENT 10-year total CVD risk (identical to risk in the analytic dataset),numeric,probability,Derived (preventr 0.12.0 coefficients)
+prevent_ascvd,Base PREVENT 10-year ASCVD risk,numeric,probability,Derived (preventr 0.12.0 coefficients)
+prevent_hf,Base PREVENT 10-year heart failure risk,numeric,probability,Derived (preventr 0.12.0 coefficients)
+prevent_total_cvd_kidney_neutral,"Base PREVENT 10-year total CVD risk with eGFR set to 90 mL/min per 1.73 m2 (kidney term removed)",numeric,probability,Derived (Code/05d_guideline_categories.R)
+ascvd_category,"PREVENT-ASCVD category (<3%, 3% to <5%, 5% to <10%, >=10%)",factor,,Derived
+ascvd_ge5,PREVENT-ASCVD 10-year risk >= 5% (2026 dyslipidemia guideline statin threshold),0/1,,Derived
+total_cvd_ge7_5,PREVENT total CVD 10-year risk >= 7.5% (2025 blood-pressure guideline threshold),0/1,,Derived
+low_grip,Grip strength at or below the sex-specific weighted 25th percentile of the primary cohort (39.9 kg men; 24.7 kg women),0/1,,Derived
+any_functional_limitation,"Mobility, ADL, or IADL limitation (1 = any present; 0 = all three classifiable and absent; NA = otherwise); interpretable at age 60-79",0/1,,Derived

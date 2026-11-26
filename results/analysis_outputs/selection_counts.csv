@@ -1,0 +1,5 @@
+"group","N","deaths"
+"Original core",2650,192
+"BMI-only additions",229,25
+"BMI-relaxed sensitivity",2879,217
+"Clinical candidates with missing score inputs and otherwise valid grip/linkage/height",332,38

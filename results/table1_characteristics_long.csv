@@ -1,0 +1,64 @@
+"cohort","section","variable","level","type","n","estimate","spread","n_missing"
+"primary","Counts","participants","","count",2650,2650,NA,0
+"primary","Counts","deaths","","count",192,192,NA,0
+"primary","Counts","median_followup_years","","median",2650,6.75,NA,0
+"primary","Continuous","age","","mean_sd",2650,60.6945749921359,7.62445549148521,0
+"primary","Continuous","grip","","mean_sd",2650,35.8944249412851,10.5782050606515,0
+"primary","Continuous","height","","mean_sd",2650,168.202056451578,10.2518760194927,0
+"primary","Continuous","bmi","","mean_sd",2650,28.2795256399074,4.67005938231236,0
+"primary","Continuous","sbp","","mean_sd",2650,126.337832855118,16.0688303505048,0
+"primary","Continuous","tc","","mean_sd",2650,202.950378308129,37.4035772719628,0
+"primary","Continuous","hdl","","mean_sd",2650,55.3577610062846,15.080515583088,0
+"primary","Continuous","egfr","","mean_sd",2650,86.1123043433262,15.8361783251757,0
+"primary","Continuous","risk","","mean_sd",2650,0.0872614481458855,0.0646313125866856,0
+"primary","Continuous","risk_ascvd","","mean_sd",2650,0.0530475538829923,0.0379995892062399,0
+"primary","Continuous","pir","","mean_sd",2426,3.42086709781816,1.5993587731302,224
+"primary","Continuous","grip_men","","mean_sd",1287,44.7082894627119,7.82515799930073,0
+"primary","Continuous","grip_women","","mean_sd",1363,27.9124619195922,4.86805974800439,0
+"primary","Binary","female","1","n_pct",1363,52.4765123885623,NA,0
+"primary","Binary","diabetes","1","n_pct",432,11.6919575276013,NA,0
+"primary","Binary","smoking","1","n_pct",458,15.8238053185352,NA,0
+"primary","Binary","bp_tx","1","n_pct",988,33.980117231444,NA,0
+"primary","Binary","statin","1","n_pct",751,28.7109577777828,NA,0
+"primary","Binary","grip_low","1","n_pct",37,0.853892239912699,NA,0
+"primary","Binary","prior_hosp","1","n_pct",234,8.43566252862404,NA,0
+"primary","Categorical","race_eth","Non-Hispanic White","n_pct",1090,76.8820416252141,NA,0
+"primary","Categorical","race_eth","Non-Hispanic Black","n_pct",627,8.77036634657344,NA,0
+"primary","Categorical","race_eth","Hispanic","n_pct",585,8.92011439416977,NA,0
+"primary","Categorical","race_eth","Non-Hispanic Asian","n_pct",306,3.98070280781077,NA,0
+"primary","Categorical","race_eth","Other or multiracial","n_pct",42,1.44677482623186,NA,0
+"primary","Categorical","education","Less than high school","n_pct",622,13.9570054400181,NA,0
+"primary","Categorical","education","High school or equivalent","n_pct",573,20.2146459987651,NA,0
+"primary","Categorical","education","More than high school","n_pct",1455,65.8283485612166,NA,0
+"mobility","Counts","participants","","count",1512,1512,NA,0
+"mobility","Counts","deaths","","count",148,148,NA,0
+"mobility","Counts","median_followup_years","","median",1512,6.66666666666667,NA,0
+"mobility","Continuous","age","","mean_sd",1512,66.9341325074942,5.31037302489017,0
+"mobility","Continuous","grip","","mean_sd",1512,33.8210602112013,9.95877147794581,0
+"mobility","Continuous","height","","mean_sd",1512,167.243760311135,10.2762642698777,0
+"mobility","Continuous","bmi","","mean_sd",1512,28.2815423892004,4.60372031966156,0
+"mobility","Continuous","sbp","","mean_sd",1512,129.241397504861,16.6048386767285,0
+"mobility","Continuous","tc","","mean_sd",1512,200.013184557377,36.9028093747181,0
+"mobility","Continuous","hdl","","mean_sd",1512,56.3672366617318,15.6142271029359,0
+"mobility","Continuous","egfr","","mean_sd",1512,81.1134722323498,15.6491348823743,0
+"mobility","Continuous","risk","","mean_sd",1512,0.12400001658073,0.0669804967812736,0
+"mobility","Continuous","risk_ascvd","","mean_sd",1512,0.0738190330970377,0.0392856692029604,0
+"mobility","Continuous","pir","","mean_sd",1383,3.39670773506533,1.55132598454642,129
+"mobility","Continuous","grip_men","","mean_sd",726,42.6174251725275,7.46551483534239,0
+"mobility","Continuous","grip_women","","mean_sd",786,26.652141762192,4.48308303278163,0
+"mobility","Binary","female","1","n_pct",786,55.0968293843855,NA,0
+"mobility","Binary","diabetes","1","n_pct",299,14.7996205897567,NA,0
+"mobility","Binary","smoking","1","n_pct",204,10.7696812460291,NA,0
+"mobility","Binary","bp_tx","1","n_pct",697,43.0863548699655,NA,0
+"mobility","Binary","statin","1","n_pct",532,34.5714477215402,NA,0
+"mobility","Binary","grip_low","1","n_pct",30,1.14244181901575,NA,0
+"mobility","Binary","prior_hosp","1","n_pct",157,9.56916293928635,NA,0
+"mobility","Binary","mobility","1","n_pct",353,18.8073470553898,NA,0
+"mobility","Categorical","race_eth","Non-Hispanic White","n_pct",637,79.0325438505464,NA,0
+"mobility","Categorical","race_eth","Non-Hispanic Black","n_pct",365,7.81216711103385,NA,0
+"mobility","Categorical","race_eth","Hispanic","n_pct",343,8.04708702201073,NA,0
+"mobility","Categorical","race_eth","Non-Hispanic Asian","n_pct",147,3.72161223864848,NA,0
+"mobility","Categorical","race_eth","Other or multiracial","n_pct",20,1.38658977776055,NA,0
+"mobility","Categorical","education","Less than high school","n_pct",372,14.1585180307721,NA,0
+"mobility","Categorical","education","High school or equivalent","n_pct",327,19.3536201148531,NA,0
+"mobility","Categorical","education","More than high school","n_pct",813,66.4878618543747,NA,0

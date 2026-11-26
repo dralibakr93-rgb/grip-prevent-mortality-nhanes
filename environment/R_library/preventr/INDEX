@@ -1,0 +1,10 @@
+app                     Navigate to browser-based Shiny implementation
+                        of PREVENT equations
+estimate_risk           Estimate risk of cardiovascular events using
+                        the American Heart Association (AHA) Predicting
+                        Risk of cardiovascular disease EVENTs (PREVENT)
+                        equations, with optional comparison to their
+                        _de facto_ predecessor, the Pooled Cohort
+                        Equations (PCEs) from the AHA and American
+                        College of Cardiology (ACC)
+plot_risk               Plot risk estimates from 'estimate_risk()'

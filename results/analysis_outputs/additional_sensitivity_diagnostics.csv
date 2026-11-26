@@ -1,0 +1,9 @@
+"model","N","deaths","parameters","design_df","inference_df","warnings","min_cov_eigen"
+"BMI range relaxed",2879,217,11,32,22,"",4.60781912266699e-05
+"Grip restricted cubic spline",2650,192,12,32,21,"",3.5747290888791e-05
+"Clinical factors with matched flexible age",2650,192,16,32,17,"",2.79369939069606e-06
+"Three maximal-effort trials per hand",2442,175,11,32,22,"",4.44704546474891e-05
+"Base PREVENT common biomarker sample",2634,190,11,32,22,"",4.02686525679956e-05
+"Full PREVENT with UACR and HbA1c",2634,190,11,32,22,"",4.23378863771302e-05
+"Base adjustment in expanded complete cases",2425,182,11,32,22,"",4.34889237073527e-05
+"Additional education income and cancer",2425,182,15,32,18,"",2.82172541807064e-05

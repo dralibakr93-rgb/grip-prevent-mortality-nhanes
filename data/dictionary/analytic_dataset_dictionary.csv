@@ -1,0 +1,65 @@
+variable,description,type,units,source_or_derivation
+SEQN,Respondent sequence number (NHANES public identifier),integer,,DEMO SEQN
+cycle,NHANES examination cycle (2011 = 2011-2012; 2013 = 2013-2014),factor,,Source file cycle
+SDMVSTRA,Masked variance pseudo-stratum,integer,,DEMO SDMVSTRA
+SDMVPSU,Masked variance pseudo-PSU (nested within stratum),integer,,DEMO SDMVPSU
+WTMEC2YR,Two-year MEC examination weight as released,numeric,,DEMO WTMEC2YR
+w,Pooled 4-year examination weight used in all analyses,numeric,,WTMEC2YR / 2
+design_ok,Positive examination weight and valid design variables (all rows here are TRUE),logical,,w > 0 and strata/PSU present
+clinical,"Clinically eligible: design_ok, age 50-79, all 5 CVD-history items negative, not known pregnant",logical,,Derived
+pregrip,clinical + complete PREVENT inputs within study ranges + eligible mortality linkage + measured height,logical,,Derived
+core,Primary cohort: pregrip + at least 1 maximal-effort grip trial in each hand,logical,,Derived
+mobility_cohort,Older cohort: core + age 60-79 + classifiable mobility status,logical,,Derived
+age,Age at screening,numeric,years,DEMO RIDAGEYR
+sex,"Sex (1 = male, 2 = female)",integer,,DEMO RIAGENDR
+race_eth,Self-reported race and ethnicity (descriptive only),character,,"DEMO RIDRETH3 (1,2 Hispanic; 3 NH White; 4 NH Black; 6 NH Asian; 7 Other/multiracial)"
+education,"Educational attainment, 3 groups (adults 20+)",character,,DEMO DMDEDUC2 (1-2; 3; 4-5)
+pir,Family income-to-poverty ratio (0-5; 5 = 5 or more),numeric,ratio,DEMO INDFMPIR
+height,Standing height,numeric,cm,BMX BMXHT
+bmi,Body-mass index,numeric,kg/m2,BMX BMXBMI
+sbp,Systolic blood pressure: mean of usable readings after omitting the first when >=2 available,numeric,mm Hg,BPX BPXSY1-BPXSY4
+tc,Total cholesterol,numeric,mg/dL,TCHOL LBXTC
+hdl,HDL cholesterol,numeric,mg/dL,HDL LBDHDD
+scr,Serum creatinine (IDMS-standardized as released),numeric,mg/dL,BIOPRO LBXSCR
+egfr,"eGFR, 2021 race-free CKD-EPI creatinine equation",numeric,mL/min/1.73 m2,"Derived from scr, age, sex"
+diabetes,Diagnosed diabetes: DIQ010 = 1 or insulin (DIQ050 = 1) or diabetes pills (DIQ070 = 1); 0 if DIQ010 = 2 or 3,0/1,,DIQ
+diabetes_a1c,diabetes or HbA1c >= 6.5% (sensitivity definition),0/1,,DIQ + GHB LBXGH
+LBXGH,Glycated hemoglobin,numeric,%,GHB LBXGH
+smoking,Current smoking: >=100 lifetime cigarettes and now smoking every day or some days,0/1,,"SMQ SMQ020, SMQ040"
+bp_tx,Current prescribed antihypertensive medication (questionnaire skips coded 0),0/1,,"BPQ BPQ020, BPQ040A, BPQ050A"
+statin,Statin use from prescription records (ingredient names or drug class 173); unresolved = missing,0/1,,RXQ_RX + RXQ_DRUG
+risk,Base PREVENT 10-year total CVD risk (sex-specific; inputs within study ranges),numeric,probability,Derived (preventr 0.12.0 coefficients)
+logitrisk,logit(risk),numeric,,Derived
+risk_ascvd,Base PREVENT 10-year ASCVD risk (sex-specific; inputs within study ranges),numeric,probability,Derived (preventr 0.12.0 coefficients; Code/02_cohort.R)
+grip,Maximum single-hand grip across maximal-effort trials; requires >=1 qualifying trial per hand,numeric,kg,MGX MGXH1T1-MGXH2T3 with effort codes
+grip_any,Maximum qualifying grip allowing one-hand testing (sensitivity),numeric,kg,MGX
+nhand1,"Number of qualifying trials, hand 1",integer,,MGX
+nhand2,"Number of qualifying trials, hand 2",integer,,MGX
+both_hands,At least 1 qualifying trial in each hand,logical,,MGX
+grip_status,Grip-testing disposition category,character,,MGX MGDEXSTS + effort codes
+grip_low,"Descriptive low strength: <27 kg men, <16 kg women",0/1,,Derived
+lower_z,Primary exposure: (sex-specific weighted mean - grip) / sex-specific weighted SD (fixed scaling),numeric,SD units (positive = weaker),"Derived; means 44.71/27.91 kg, SDs 7.83/4.87 kg"
+lower5,-grip/5 (HR per 5 kg lower strength),numeric,per 5 kg,Derived
+hand_pain,"Pain, aching, or stiffness in either hand in the past 7 days",logical,,"MGX MGQ070, MGQ100"
+PFQ054,"Difficulty walking without special equipment (1 yes, 2 no)",integer,,PFQ
+PFQ061B,Difficulty walking a quarter mile (1 none ... 4 unable; 5 do not do),integer,,PFQ
+PFQ061C,Difficulty walking up 10 steps (1 none ... 4 unable; 5 do not do),integer,,PFQ
+mobility,Reported mobility limitation (1 = limitation; 0 = explicit no limitation; NA = unclassified),0/1,,"Derived from PFQ054, PFQ061B, PFQ061C"
+MCQ220,"Ever told cancer or malignancy (1 yes, 2 no)",integer,,MCQ
+linked,Eligible mortality linkage with known vital status and follow-up months,logical,,"2019 LMF ELIGSTAT, MORTSTAT, PERMTH_EXM"
+months,Person-months of follow-up from MEC examination,integer,months,LMF PERMTH_EXM
+time,"Follow-up time (months/12; 0 months set to 0.5 months, none in cohort)",numeric,years,Derived
+death,"All-cause death by December 31, 2019",0/1,,LMF MORTSTAT
+cause,"Underlying cause of death, leading-cause recode",integer,,LMF UCOD_LEADING
+death_cvd,Death from heart disease (1) or cerebrovascular disease (5),0/1,,LMF UCOD_LEADING
+PFQ061A,Difficulty managing money (1 none ... 4 unable; 5 do not do),integer,,PFQ
+PFQ061F,Difficulty doing chores around the house (1 none ... 4 unable; 5 do not do),integer,,PFQ
+PFQ061G,Difficulty preparing own meals (1 none ... 4 unable; 5 do not do),integer,,PFQ
+PFQ061H,Difficulty walking between rooms on the same floor (1 none ... 4 unable; 5 do not do),integer,,PFQ
+PFQ061J,Difficulty getting in and out of bed (1 none ... 4 unable; 5 do not do),integer,,PFQ
+PFQ061K,"Difficulty using fork, knife, or drinking from a cup (1 none ... 4 unable; 5 do not do)",integer,,PFQ
+PFQ061L,Difficulty dressing yourself (1 none ... 4 unable; 5 do not do),integer,,PFQ
+adl,"ADL limitation (1 = codes 2-4 on any of PFQ061H/J/K/L; 0 = code 1 on all four; NA = unclassified); interpretable at age 60-79",0/1,,"Derived (Code/00_setup.R add_function_hospital_vars)"
+iadl,"IADL limitation (1 = codes 2-4 on any of PFQ061A/F/G; 0 = code 1 on all three; NA = unclassified); interpretable at age 60-79",0/1,,"Derived (Code/00_setup.R add_function_hospital_vars)"
+HUQ071,"Overnight hospital patient in past 12 months, excluding emergency-room-only stays (1 yes, 2 no, 7 refused, 9 don't know)",integer,,"HUQ_G, HUQ_H"
+prior_hosp,"Prior-year overnight hospitalization (1 = HUQ071 yes; 0 = no; NA = refused/don't know/missing)",0/1,,Derived from HUQ071

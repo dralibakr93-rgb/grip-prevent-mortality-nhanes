@@ -1,0 +1,7 @@
+"Analysis","n","Deaths","HR (95% CI)","P value","df"
+"Attained age as time scale","2,650","192","1.71 (1.33–2.19)","<0.001",22
+"Two-year landmark","2,624","166","1.68 (1.26–2.24)","0.001",22
+"Any valid hand (1-hand testing allowed)","2,718","202","1.73 (1.34–2.22)","<0.001",22
+"Excluding recent hand pain or stiffness","1,917","136","2.10 (1.56–2.83)","<0.001",22
+"Glycated hemoglobin-inclusive diabetes definition","2,650","192","1.72 (1.33–2.24)","<0.001",22
+"Individual risk factors replace PREVENT","2,650","192","1.72 (1.28–2.31)","0.001",19

@@ -1,0 +1,9 @@
+"variable","role","value"
+"logit_PREVENT","knot1",-2.81524072803679
+"logit_PREVENT","knot2",-2.02097612886193
+"logit_PREVENT","boundary_low",-4.79713648248176
+"logit_PREVENT","boundary_high",0.337689829967196
+"age","knot1",57
+"age","knot2",65
+"age","boundary_low",50
+"age","boundary_high",79
